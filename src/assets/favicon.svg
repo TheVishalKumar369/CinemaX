@@ -1,0 +1,27 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cinemaGradient" x1="64" y1="64" x2="448" y2="448">
+      <stop offset="0%" stop-color="#7C3AED"></stop>
+      <stop offset="100%" stop-color="#06B6D4"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="120" fill="#0F172A"></rect>
+
+  <!-- Film Reel -->
+  <circle cx="220" cy="220" r="100" stroke="url(#cinemaGradient)" stroke-width="24"></circle>
+
+  <circle cx="190" cy="190" r="18" fill="url(#cinemaGradient)"></circle>
+  <circle cx="250" cy="190" r="18" fill="url(#cinemaGradient)"></circle>
+  <circle cx="190" cy="250" r="18" fill="url(#cinemaGradient)"></circle>
+  <circle cx="250" cy="250" r="18" fill="url(#cinemaGradient)"></circle>
+
+  <!-- Search Handle -->
+  <line x1="295" y1="295" x2="375" y2="375" stroke="url(#cinemaGradient)" stroke-width="24" stroke-linecap="round"></line>
+
+  <!-- App Initial -->
+  <text x="256" y="455" text-anchor="middle" fill="white" font-size="56" font-family="Arial, sans-serif" font-weight="700">
+    CinemaX
+  </text>
+</svg>
