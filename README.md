@@ -1,16 +1,71 @@
-# React + Vite
+# CinemaX 🍿
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CinemaX is a modern movie discovery application that allows users to find their favorite movies without hassle. It features a robust search functionality, trending movies tracking, and beautifully presented movie data.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Movie Search:** Search for any movie using the TMDB API.
+- **Trending Movies:** Discover what's popular right now based on real-time user searches.
+- **Responsive Design:** A beautiful, responsive user interface that works seamlessly on desktop and mobile.
+- **Debounced Search:** Optimized search that waits for you to stop typing before making API calls.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** React, Vite
+- **Backend/Database:** Appwrite (used for tracking trending searches)
+- **API:** TMDB (The Movie Database) API for movie data
+- **Styling:** CSS / Tailwind CSS
 
-## Expanding the ESLint configuration
+## ⚙️ Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <your-github-repo-url>
+   ```
+
+2. Navigate into the project directory:
+   ```bash
+   cd cinemaX
+   ```
+
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+
+### Environment Variables
+
+Create a `.env` file in the root of your project and add the following variables. You will need to get API keys from TMDB and set up an Appwrite project:
+
+```env
+VITE_TMDB_API_KEY=your_tmdb_api_key_here
+
+VITE_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
+VITE_APPWRITE_PROJECT_ID=your_appwrite_project_id
+VITE_APPWRITE_DATABASE_ID=your_appwrite_database_id
+VITE_APPWRITE_TABLE_ID=your_appwrite_collection_or_table_id
+```
+
+### Running the App Locally
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Your app will be available at `http://localhost:5173`.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## 📝 License
+
+This project is open-source and available under the [MIT License](LICENSE).
